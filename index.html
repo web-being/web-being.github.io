@@ -36,7 +36,5 @@ Why do you need a website:
 
 <p>Because we understand that you may need a website but have no resources, like time, money or knowledge. So we are here to help: we make sure that your web-site works for you and that is the best wage for us :)!</p>
 
-{% comment %}
-{% assign posts=site.posts | where:"lang", lang %}
+{% assign posts=site.posts %}
 {% include posts.html posts=posts %}
-{% endcomment %}
