@@ -1,0 +1,26 @@
+<header class="site-header"><div class="content-centered">
+	{% comment %}
+	<a class="site-logo" href="{{ site.baseurl }}/">
+		<img class="site-logo-image" src="{{ site.baseurl }}/img/logo-white.png"/>
+		<h2 class="site-title">{{ site.title[lang] }}</h2>
+		<h3 class="site-tagline">{{ site.tagline[lang] }}</h3>
+	</a>
+	{% endcomment %}
+
+	{% comment %}
+	<nav class="site-lang">
+		{% if lang != 'en' %}<a href="./">English</a>{% endif %}
+		{% if lang != 'fr' %}<a href="./fr">Français</a>{% endif %}
+		{% if lang != 'ru' %}<a href="./ru">Русский</a>{% endif %}
+	</nav>
+	{% endcomment %}
+
+	{% comment %}
+	<nav class="site-nav">
+		<a href="/{% if lang != 'en' %}{{ lang }}{% endif %}">{{ site.t[lang].events }}</a> ♦
+		<a href="/programs/{% if lang != 'en' %}{{ lang }}{% endif %}">{{ site.t[lang].programs }}</a> ♦
+		<a href="/about/{% if lang != 'en' %}{{ lang }}{% endif %}">{{ site.t[lang].about }}</a>
+	</nav>
+	{% endcomment %}
+
+</div></header>

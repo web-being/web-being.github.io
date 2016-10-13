@@ -1,0 +1,42 @@
+---
+layout: default
+ref: index
+lang: en
+---
+{% assign lang=page.lang | default: 'en' %}
+
+<h1>Hi! We are web-volunteers from Montréal and we help you with web-sites for free price*.</h1>
+
+<p>* That is you pay what you want, considering reasonable expenses like we need to eat too :)</p>
+
+<figure class="profile">
+  <img class="profile-image" src="img/dima.jpg">
+  <figcaption class="profile-title"><a href="https://github.com/dfcreative">Dima Yv</a></figcaption>
+</figure>
+<figure class="profile">
+  <img class="profile-image" src="img/boris.jpg">
+  <figcaption class="profile-title"><a href="https://github.com/bvarba">Boris Varbanov</a></figcaption>
+</figure>
+
+<hr/>
+
+<p>If you want a website, please contact us:</p>
+
+Your name:
+
+Email:
+
+Why do you need a website:
+
+<h2>Sites we’ve already made</h2>
+
+..list of sites
+
+<h2>Why do we do that?</h2>
+
+<p>Because we understand that you may need a website but have no resources, like time, money or knowledge. So we are here to help: we make sure that your web-site works for you and that is the best wage for us :)!</p>
+
+{% comment %}
+{% assign posts=site.posts | where:"lang", lang %}
+{% include posts.html posts=posts %}
+{% endcomment %}
