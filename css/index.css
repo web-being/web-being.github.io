@@ -594,12 +594,12 @@ hr {
 
 /** A bit custom styles */
 .form {
-    margin-top: 4rem;
     margin-bottom: 2rem;
     background: rgb(243, 243, 243);
     color: rgb(10, 10, 10);
     padding: 2rem 2rem;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .form-title {
 	margin: 0;
@@ -625,7 +625,15 @@ hr {
 	padding: 0;
 	line-height: 3rem;
 	margin: 1rem auto;
-	color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
+	background: rgb(255, 152, 0);
+	/*border: 0;*/
+}
+.form-submit:hover {
+	color: white;
+	background: rgb(255, 152, 0);
 	/*border: 0;*/
 }
 
