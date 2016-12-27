@@ -1,5 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
+
 {% assign lang=page.lang | default: 'en' %}
+
 <html lang="{{ lang }}">
 
 	{% include head.html %}
@@ -7,15 +9,9 @@
 	<body>
 		{% include header.html %}
 
-		<section class="page-content">
-			<div class="content-centered">
-				{{ content }}
-			</div>
-		</section>
-
-		<!-- {% include form.html %} -->
-
-		{% include footer.html %}
+		<main class="page-content">
+			{{ content }}
+		</main>
 	</body>
 
 </html>
